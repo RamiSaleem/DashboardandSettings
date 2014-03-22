@@ -87,6 +87,8 @@
             <include>**/*cart*.java</include>
             <include>**/Check.java</include>
             <include>**/*Check*.java</include>
+            <include>**/Change.java</include>
+            <include>**/*Change*.java</include>
           </includes>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                 </configuration>
