@@ -229,7 +229,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
          //Hide keyboard
          driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]").click();*/
         
-        JavascriptExecutor js = (JavascriptExecutor) markavipdriver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         HashMap<String, String> scrollObject = new HashMap<String, String>();
         scrollObject.put("direction", "down");
         js.executeScript("mobile: scroll", scrollObject);
