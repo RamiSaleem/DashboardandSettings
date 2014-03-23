@@ -131,10 +131,10 @@ public class Check_currency implements SauceOnDemandSessionIdProvider, SauceOnDe
         
         
         //Open country list
-          driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[1]/text[2]").click();
+          driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[1]/text[2]")).click();
         //Select Emirates
-          driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[2]/text[1]").click();
-          driver.findElement(By.xpath("//window[1]/button[5]").click();
+          driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[2]/text[1]")).click();
+          driver.findElement(By.xpath("//window[1]/button[5]")).click();
         
         //Open the slide menu
           driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
