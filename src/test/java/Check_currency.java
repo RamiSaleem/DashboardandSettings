@@ -119,7 +119,7 @@ public class Check_currency implements SauceOnDemandSessionIdProvider, SauceOnDe
         }
         
         //Open the slide menu
-          driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]").click();
+          driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
         
           
         
@@ -129,13 +129,6 @@ public class Check_currency implements SauceOnDemandSessionIdProvider, SauceOnDe
             Thread.currentThread().interrupt();
         }
         
-          
-        
-        try {
-            Thread.sleep(30000);
-        } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
         
         //Open country list
           driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[1]/text[2]").click();
@@ -144,9 +137,9 @@ public class Check_currency implements SauceOnDemandSessionIdProvider, SauceOnDe
           driver.findElement(By.xpath("//window[1]/button[5]").click();
         
         //Open the slide menu
-          driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]").click();
+          driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
         //open the product
-          driver.findElement(By.xpath("//window[1]/UIACollectionView[3]/UIACollectionCell[1]/UIACollectionView[1]/UIACollectionCell[1]/button[1]").click();
+          driver.findElement(By.xpath("//window[1]/UIACollectionView[3]/UIACollectionCell[1]/UIACollectionView[1]/UIACollectionCell[1]/button[1]")).click();
 		
           
 		try {
@@ -155,7 +148,7 @@ public class Check_currency implements SauceOnDemandSessionIdProvider, SauceOnDe
 		    Thread.currentThread().interrupt();
 		}
 		
-          driver.findElement(By.xpath("//window[1]/UIACollectionView[2]/UIACollectionCell[1]/text[1]").click();
+          driver.findElement(By.xpath("//window[1]/UIACollectionView[2]/UIACollectionCell[1]/text[1]")).click();
         
           
 		
@@ -166,7 +159,7 @@ public class Check_currency implements SauceOnDemandSessionIdProvider, SauceOnDe
 		}
         
         
-        String checkcurrency = driver.findElement(By.xpath("//window[1]/text[11]").getText();
+        String checkcurrency = driver.findElement(By.xpath("//window[1]/text[11]")).getText();
         Assert.assertEquals(checkcurrency, "AED");
                            }
                            
