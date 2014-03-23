@@ -140,7 +140,7 @@ public class Change_country implements SauceOnDemandSessionIdProvider, SauceOnDe
            driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[1]/text[2]")).click();
         //Select lebanon
            driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[6]/text[1]")).click();
-           driver.findElement(By.xpath("//window[1]/button[5]").click();
+           driver.findElement(By.xpath("//window[1]/button[5]")).click();
         
         String country = driver.findElement(By.xpath("//window[1]/UIACollectionView[4]/UIACollectionCell[1]/text[2]")).getText();
         
