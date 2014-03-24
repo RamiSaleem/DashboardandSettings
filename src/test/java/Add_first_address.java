@@ -138,9 +138,11 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[1]")).sendKeys("RAMI");
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[2]")).sendKeys("SALEEM");
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).sendKeys("AutomationScript61@qa.markavip.com");
-        driver.findElement(By.xpath("//window[2]/toolbar[1]/segmented[1]/button[2]")).click();
+        //driver.findElement(By.xpath("//window[2]/toolbar[1]/segmented[1]/button[2]")).click();
+        driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
         driver.findElement(By.xpath("//window[1]/scrollview[1]/secure[1]")).sendKeys("147852");
-        driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
+        driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
+        //driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[4]")).click();
           
         try {
