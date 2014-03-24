@@ -46,7 +46,7 @@ import org.junit.After;
  */
 
 @Listeners({SauceOnDemandTestListener.class})
-public class Add_address implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
+public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
     
     public SauceOnDemandAuthentication authentication;
     
@@ -108,7 +108,7 @@ public class Add_address implements SauceOnDemandSessionIdProvider, SauceOnDeman
     }
     
     @Test
-    public void Add_address() throws Exception {
+    public void Edit_address() throws Exception {
         
         
         
