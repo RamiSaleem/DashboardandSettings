@@ -67,6 +67,30 @@
 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
           <includes>
+            <include>**/*Page.java</include>
+            <include>**/Page*.java</include>
+            <include>**/*Test.java</include>
+            <include>**/Test*.java</include>
+            <include>**/*Login.java</include>
+            <include>**/Login*.java</include>
+            <include>**/*Register.java</include>
+            <include>**/Register*.java</include>
+            <include>**/*user.java</include>
+            <include>**/*Checkout.java</include>
+            <include>**/Checkout*.java</include>
+            <include>**/Add*.java</include>
+            <include>**/*Add.java</include>
+            <include>**/Logout*.java</include>
+            <include>**/Logout.java</include>
+            <include>**/*Login*.java</include>
+            <include>**/cart.java</include>
+            <include>**/*cart*.java</include>
+            <include>**/Check.java</include>
+            <include>**/*Check*.java</include>
+            <include>**/Change.java</include>
+            <include>**/*Change*.java</include>
+            <include>**/address.java</include>
+            <include>**/*address*.java</include>
             <include>**/Edit.java</include>
             <include>**/*Edit*.java</include>
           </includes>
