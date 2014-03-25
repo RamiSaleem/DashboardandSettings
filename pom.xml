@@ -89,6 +89,10 @@
             <include>**/*Check*.java</include>
             <include>**/Change.java</include>
             <include>**/*Change*.java</include>
+            <include>**/Edit.java</include>
+            <include>**/*Edit*.java</include>
+            <include>**/address.java</include>
+            <include>**/*address*.java</include>
           </includes>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                 </configuration>
