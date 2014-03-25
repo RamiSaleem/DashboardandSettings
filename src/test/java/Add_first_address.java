@@ -129,7 +129,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
           
         
         try {
-            Thread.sleep(30000);
+            Thread.sleep(8000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -139,7 +139,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         
         
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -158,7 +158,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[4]")).click();
           
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -167,7 +167,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
 
         
         try {
-            Thread.sleep(60000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -179,7 +179,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
           
         
         try {
-            Thread.sleep(60000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -205,7 +205,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/button[5]")).click();
         
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -245,7 +245,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         js.executeScript("mobile: scroll", scrollObject);
         
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -255,7 +255,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         
         
         try {
-            Thread.sleep(30000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
