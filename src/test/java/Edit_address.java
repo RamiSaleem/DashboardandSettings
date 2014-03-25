@@ -194,7 +194,7 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         //driver.findElement(By.xpath("//window[1]/scrollview[1]/button[1]")).click();
         //driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
         
-        driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[6]")).click();
+        driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[6]")).sendKeys("700000000");
         driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
         
         
