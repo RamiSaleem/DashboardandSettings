@@ -164,7 +164,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         }
         
         
-        if (driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).isDisplayed==true)
+        if (driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).isDisplayed()==true)
         
         {
         	
