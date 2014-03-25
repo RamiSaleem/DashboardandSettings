@@ -100,6 +100,8 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         this.driver = new RemoteWebDriver(
                                           new URL("http://ramisaleem:0fbac7ef-aa6d-45b4-b6e7-6aeba7a3e9ea@ondemand.saucelabs.com:80/wd/hub"),
                                           desiredCapabilities);
+        
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
     
     /**
