@@ -33,7 +33,6 @@ import java.util.Set;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.*;
 import java.util.Date;
 import org.junit.Before;
 import java.text.MessageFormat;
@@ -202,10 +201,7 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[8]")).click();
         driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
         
-        JavascriptExecutor js = (JavascriptExecutor) markavipdriver;
-	HashMap<String, String> scrollObject = new HashMap<String, String>();
-	scrollObject.put("direction", "down");
-	js.executeScript("mobile: scroll", scrollObject);
+       
         
          try {
             Thread.sleep(7000);
