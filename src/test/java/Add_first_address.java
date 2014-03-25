@@ -119,7 +119,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         
         
         //Generate different email address each time       
-    Date currenttime= new Date();
+        Date currenttime= new Date();
 	DateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
 	String generateemail= "Automation" + dateFormat.format(currenttime) + "@qa.markavip.com";
 	
@@ -157,18 +157,6 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         //driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[4]")).click();
           
-          
-          for (int checkit = 1; checkit < 2; checkit=checkit+1)
-          
-          {
-          	
-          	
-          	if (driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).isDisplayed()==true)
-          
-          
-          {
-          	
-          
         driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
 
         
@@ -177,6 +165,14 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
+        
+        
+        //Try a trick to tap on the fucken menu
+        driver.findElement(By.xpath("//window[1]/button[6]")).click();
+        
+        
+        
+        
         
         
         //navigate to my account screens
@@ -235,21 +231,8 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         System.out.println(realaddress);
         Assert.assertEquals(checksavedaddress, realaddress);
   	
-  	if (driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/textview[2]")).isDisplayed()==true)
-  	{
-  		checkit=10;
-  		
-  	}
-  	
-  	else{checkit=0;}
-  	
-  	
-          }//if
-          
-          
-          else {checkit=0;}
-     
-          }//for
+
+ 
         
     }
     
