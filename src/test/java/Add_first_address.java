@@ -157,7 +157,19 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         //driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[4]")).click();
           
-        driver.findElement(By.name("menu button")).click();
+          
+          for (int checkit = 1; checkit < 2; checkit=checkit+1)
+          
+          {
+          	
+          	
+          	if (driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).isDisplayed()==true)
+          
+          
+          {
+          	
+          
+        driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
 
         
         try {
@@ -177,23 +189,6 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
-        
-        
-        //We need to swipe to find the invisible element to be able to tap on it
-        /*JavascriptExecutor js = (JavascriptExecutor) markavipdriver;
-         HashMap<String, Double> swipeObject = new HashMap<String, Double>();
-         swipeObject.put("startX", 0.0);
-         swipeObject.put("startY", 0.0);
-         swipeObject.put("endX", 0.0);
-         swipeObject.put("endY", 0.9);
-         swipeObject.put("duration", 1.9);
-         js.executeScript("mobile: swipe", swipeObject);*/
-        
-        /*JavascriptExecutor js = (JavascriptExecutor) markavipdriver;
-         HashMap<String, String> scrollObject = new HashMap<String, String>();
-         scrollObject.put("direction", "down");
-         js.executeScript("mobile: scroll", scrollObject);*/
-        
         
         //Tap on add new address
         driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/button[5]")).click();
@@ -240,7 +235,16 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         System.out.println(realaddress);
         Assert.assertEquals(checksavedaddress, realaddress);
   	
-        	
+  	if (driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/textview[2]")).isDisplayed()==true)
+  	{
+  		checkit=10;
+  		
+  	}
+  	
+  	else{checkit=0;}
+  	
+  	
+          }
         
     }
     
