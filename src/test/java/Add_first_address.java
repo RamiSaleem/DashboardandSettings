@@ -178,9 +178,9 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         JavascriptExecutor js = (JavascriptExecutor) driver;
 HashMap<String, Double> swipeObject = new HashMap<String, Double>();
 swipeObject.put("startX", 0.0);
-swipeObject.put("startY", 0.1);
+swipeObject.put("startY", 0.95);
 swipeObject.put("endX", 0.0);
-swipeObject.put("endY", 0.95);
+swipeObject.put("endY", 0.1);
 swipeObject.put("duration", 1.8);
 js.executeScript("mobile: swipe", swipeObject);
 
