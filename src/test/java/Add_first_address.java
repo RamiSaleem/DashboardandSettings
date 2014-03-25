@@ -244,7 +244,12 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
   	else{checkit=0;}
   	
   	
-          }
+          }//if
+          
+          
+          else {checkit=0;}
+     
+          }//for
         
     }
     
