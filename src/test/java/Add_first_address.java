@@ -173,7 +173,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
 
         
         try {
-            Thread.sleep(3000);
+            Thread.sleep(50000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -185,7 +185,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
           
         
         try {
-            Thread.sleep(3000);
+            Thread.sleep(50000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -211,7 +211,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/button[5]")).click();
         
         try {
-            Thread.sleep(3000);
+            Thread.sleep(30000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
