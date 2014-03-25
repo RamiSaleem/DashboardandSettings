@@ -163,6 +163,12 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
             Thread.currentThread().interrupt();
         }
         
+        
+        if (driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).isDisplayed==true)
+        
+        {
+        	
+        
         driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
 
         
@@ -266,7 +272,8 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         String realaddress= "Amman Two"+"\n"+"Amman"+"\n"+"Jordan";
         System.out.println(realaddress);
         Assert.assertEquals(checksavedaddress, realaddress);
-  		
+  	
+        }	
         
     }
     
