@@ -240,7 +240,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         
         
         //Save address
-        driver.findElement(By.xpath("//window[1]/scrollview[1]/button[9]")).click();
+        driver.findElement(By.xpath("//window[1]/scrollview[1]/button[7]")).click();
         
         
         try {
