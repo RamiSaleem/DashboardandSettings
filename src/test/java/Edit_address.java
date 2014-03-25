@@ -170,6 +170,8 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).clear();
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).sendKeys("edit address");
+
+        driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
         
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/text[1]")).click();
@@ -189,9 +191,18 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
             Thread.currentThread().interrupt();
         }
         
+        //driver.findElement(By.xpath("//window[1]/scrollview[1]/button[1]")).click();
+        //driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
+        
+        driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[6]")).click();
+        driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
+        
         
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[8]")).click();
-        driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).click();
+        driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
+        
+        
+        
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[7]")).click();
         
         try {
