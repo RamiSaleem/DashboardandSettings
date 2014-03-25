@@ -157,19 +157,11 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         //driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[4]")).click();
           
-        try {
-            Thread.sleep(70000);
-        } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
-        
-      
-      
         driver.findElement(By.name("menu button")).click();
 
         
         try {
-            Thread.sleep(3000);
+            Thread.sleep(30000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -229,28 +221,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[6]")).sendKeys("700000000");
         
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).click();
-        //Hide keyboard
-        //driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
-        
-        //Telephone number 2
-        /*driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[7]").sendKeys("700000000");
-         //Hide keyboard
-         driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]").click();
-         //National id
-         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[8]").sendKeys("1234567890");
-         //Hide keyboard
-         driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]").click();*/
-        
-        /*JavascriptExecutor js = (JavascriptExecutor) driver;
-        HashMap<String, String> scrollObject = new HashMap<String, String>();
-        scrollObject.put("direction", "down");
-        js.executeScript("mobile: scroll", scrollObject);*/
-        
-        try {
-            Thread.sleep(90000);
-        } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
+   
         
         //Save address
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[9]")).click();
