@@ -168,12 +168,20 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         
         
         //Try a trick to tap on the fucken menu
-        driver.findElement(By.xpath("//window[1]/button[6]")).click();
+        driver.findElement(By.xpath("//window[1]/UIACollectionView[3]/UIACollectionCell[1]/UIACollectionView[1]/UIACollectionCell[1]/text[1]")).click();
+          try {
+            Thread.sleep(30000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
         
+        driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
         
-        
-        
-        
+           try {
+            Thread.sleep(30000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
         
         //navigate to my account screens
         driver.findElement(By.xpath("//window[1]/button[6]")).click();
