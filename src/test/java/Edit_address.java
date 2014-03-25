@@ -201,7 +201,16 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[8]")).click();
         driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
         
+        JavascriptExecutor js = (JavascriptExecutor) markavipdriver;
+	HashMap<String, String> scrollObject = new HashMap<String, String>();
+	scrollObject.put("direction", "down");
+	js.executeScript("mobile: scroll", scrollObject);
         
+         try {
+            Thread.sleep(7000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
         
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[7]")).click();
         
