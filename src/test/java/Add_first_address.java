@@ -158,22 +158,18 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[4]")).click();
           
         try {
-            Thread.sleep(300000);
+            Thread.sleep(30000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
         
-        
-        if (driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).isDisplayed()==true)
-        
-        {
-        	
-        
-        driver.findElement(By.xpath("//window[1]/navigationBar[1]/button[1]")).click();
+      
+      
+        driver.findElement(By.name("menu button")).click();
 
         
         try {
-            Thread.sleep(500000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -185,7 +181,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
           
         
         try {
-            Thread.sleep(50000);
+            Thread.sleep(3000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -245,13 +241,13 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
          //Hide keyboard
          driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]").click();*/
         
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        /*JavascriptExecutor js = (JavascriptExecutor) driver;
         HashMap<String, String> scrollObject = new HashMap<String, String>();
         scrollObject.put("direction", "down");
-        js.executeScript("mobile: scroll", scrollObject);
+        js.executeScript("mobile: scroll", scrollObject);*/
         
         try {
-            Thread.sleep(3000);
+            Thread.sleep(90000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -261,7 +257,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         
         
         try {
-            Thread.sleep(3000);
+            Thread.sleep(30000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
