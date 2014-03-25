@@ -158,7 +158,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[4]")).click();
           
         try {
-            Thread.sleep(30000);
+            Thread.sleep(70000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
