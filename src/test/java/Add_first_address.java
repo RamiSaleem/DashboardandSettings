@@ -167,7 +167,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
 
         
         try {
-            Thread.sleep(30000);
+            Thread.sleep(60000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -179,7 +179,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
           
         
         try {
-            Thread.sleep(30000);
+            Thread.sleep(60000);
         } catch(InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
@@ -200,15 +200,6 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
          scrollObject.put("direction", "down");
          js.executeScript("mobile: scroll", scrollObject);*/
         
-
-        
-        try {
-            Thread.sleep(30000);
-        } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
-        
-        
         
         //Tap on add new address
         driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/button[5]")).click();
@@ -224,17 +215,21 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[1]")).sendKeys("Rami");
         //Last name
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[2]")).sendKeys("Saleem");
+        driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).click();
         //Address
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).sendKeys("Amman Two");
         //Hide keyboard
-        driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
+        driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).click();
         //Select city
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[2]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/text[1]")).click();
         //Telephone number 1
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[6]")).sendKeys("700000000");
+        
+        driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[3]")).click();
         //Hide keyboard
-        driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
+        //driver.findElement(By.xpath("//window[2]/UIAKeyboard[1]/button[4]")).click();
+        
         //Telephone number 2
         /*driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[7]").sendKeys("700000000");
          //Hide keyboard
