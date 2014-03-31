@@ -97,9 +97,12 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
         desiredCapabilities.setCapability("name", method.getName());
         desiredCapabilities.setCapability("app", "http://attractiveapp.com/build/MarkaVIP.zip");
         
-        this.driver = new RemoteWebDriver(
-                                          new URL("http://ramisaleem:0fbac7ef-aa6d-45b4-b6e7-6aeba7a3e9ea@ondemand.saucelabs.com:80/wd/hub"),
-                                          desiredCapabilities);
+        //this.driver = new RemoteWebDriver(
+                                          //new URL("http://ramisaleem:0fbac7ef-aa6d-45b4-b6e7-6aeba7a3e9ea@ondemand.saucelabs.com:80/wd/hub"),
+                                          //desiredCapabilities);
+                                          
+        //Try new connect to suace lbas approach
+        this.driver = new RemoteWebDriver(new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"), capabilities);
         
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
