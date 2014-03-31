@@ -102,7 +102,7 @@ public class Add_first_address implements SauceOnDemandSessionIdProvider, SauceO
                                           //desiredCapabilities);
                                           
         //Try new connect to suace lbas approach
-        this.driver = new RemoteWebDriver(new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"), capabilities);
+        this.driver = new RemoteWebDriver(new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"), desiredCapabilities);
         
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
