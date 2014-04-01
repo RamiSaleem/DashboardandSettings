@@ -176,12 +176,6 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/text[1]")).click();
         
-        try {
-            Thread.sleep(30000);
-        } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
-        
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[2]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/text[1]")).click();
         
@@ -200,15 +194,6 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         
         driver.findElement(By.xpath("//window[1]/scrollview[1]/textfield[8]")).click();
         driver.findElement(By.xpath("//window[2]/toolbar[1]/button[3]")).click();
-        
-       
-        
-         try {
-            Thread.sleep(7000);
-        } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
-        
         driver.findElement(By.xpath("//window[1]/scrollview[1]/button[7]")).click();
         
         try {
@@ -218,11 +203,8 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         }
         
         /*String newaddress= "edit address" + "\n" + "Amman" + "\n" + "Jordan";
-        
         String actualaddress = driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/textview[2]")).getText();
-        
         Assert.assertEquals(actualaddress, newaddress);*/
-    
     
         String checksavedaddress= driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/textview[2]")).getText();
         
@@ -230,10 +212,6 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         String realaddress= "Amman Two"+"\n"+"Amman"+"\n"+"Jordan";
         System.out.println(realaddress);
         Assert.assertEquals(checksavedaddress, realaddress);
-  	
-  	
-        
-        
         
     }
     
