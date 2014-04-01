@@ -217,12 +217,21 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
             Thread.currentThread().interrupt();
         }
         
-        String newaddress= "edit address" + "\n" + "Amman" + "\n" + "Jordan";
+        /*String newaddress= "edit address" + "\n" + "Amman" + "\n" + "Jordan";
         
         String actualaddress = driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/textview[2]")).getText();
         
-        Assert.assertEquals(actualaddress, newaddress);
+        Assert.assertEquals(actualaddress, newaddress);*/
     
+    
+        String checksavedaddress= driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/textview[2]")).getText();
+        
+        System.out.println(checksavedaddress);
+        String realaddress= "Amman Two"+"\n"+"Amman"+"\n"+"Jordan";
+        System.out.println(realaddress);
+        Assert.assertEquals(checksavedaddress, realaddress);
+  	
+  	
         
         
         
