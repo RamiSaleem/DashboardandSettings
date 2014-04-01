@@ -67,8 +67,8 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
     
     @Parameters({"username", "key", "VESRSION", "BROWSER_NAME", "device", "platform", "app"})
     @BeforeMethod
-    public void setUp(@Optional("icreativeapp") String username,
-                      @Optional("8e40a4f9-07bd-4bdb-88f2-806eb88c63ab") String key,
+    public void setUp(@Optional("ramisaleem") String username,
+                      @Optional("0fbac7ef-aa6d-45b4-b6e7-6aeba7a3e9ea") String key,
                       @Optional("6") String VERSION,
                       @Optional("") String BROWSER_NAME,
                       @Optional("iPhone Simulator") String device,
@@ -91,9 +91,12 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         desiredCapabilities.setCapability("name", method.getName());
         desiredCapabilities.setCapability("app", "http://attractiveapp.com/build/MarkaVIP.zip");
         
-        this.driver = new RemoteWebDriver(
-                                          new URL("http://ramisaleem:0fbac7ef-aa6d-45b4-b6e7-6aeba7a3e9ea@ondemand.saucelabs.com:80/wd/hub"),
-                                          desiredCapabilities);
+        //this.driver = new RemoteWebDriver(
+                                          //new URL("http://ramisaleem:0fbac7ef-aa6d-45b4-b6e7-6aeba7a3e9ea@ondemand.saucelabs.com:80/wd/hub"),
+                                          //desiredCapabilities);
+                                          
+        //Try new connect to suace lbas approach
+        this.driver = new RemoteWebDriver(new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"), desiredCapabilities);
     }
     
     /**
