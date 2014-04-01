@@ -155,6 +155,14 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         
         //navigate to my account screens
            driver.findElement(By.xpath("//window[1]/button[6]")).click();
+           
+            try {
+            Thread.sleep(30000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+        
+        
            driver.findElement(By.xpath("//window[1]/scrollview[1]/scrollview[1]/button[4]")).click();
         
         
