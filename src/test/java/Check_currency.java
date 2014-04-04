@@ -1,4 +1,4 @@
-package test;
+package Dashboard;
 
 import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
