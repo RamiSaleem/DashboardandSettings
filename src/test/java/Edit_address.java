@@ -133,7 +133,7 @@ public class Edit_address implements SauceOnDemandSessionIdProvider, SauceOnDema
         
            driver.findElement(By.name("Log In")).click();
            
-           driver.findElement(By.xpath("//window[1]/textfield[2]")).sendKeys("icreativeapp@gmail.com");
+           driver.findElement(By.xpath("//window[1]/textfield[2]")).sendKeys("final2@qa.markavip.com");
            driver.findElement(By.xpath("//window[1]/secure[2]")).sendKeys("147852");
            
            driver.findElement(By.xpath("//window[1]/button[5]")).click();
